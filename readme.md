@@ -23,7 +23,7 @@ I've conducted a research on several Kaggle kernels and papers from sources like
 
 ## General thoughts
 
-Important to notice that we have quite imbalanced dataset in the meaning of classes defect/no_defect.
+Important to notice that we have quite imbalanced dataset in the meaning of classes defect/no_defect (True Positive and True Negative).
 Thus, it is importsnt to pick the appropriate loss.
 I've tried DiceBCELoss and Tversky Loss (alpha=0.1 and beta=0.9).
 The best results have been obtained with DiceBCELoss in this case.
