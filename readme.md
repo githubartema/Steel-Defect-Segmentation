@@ -30,7 +30,7 @@ Thus, it is important to pick the appropriate loss.
 I've tried DiceBCELoss and Tversky Loss (alpha=0.1 and beta=0.9).
 The best results have been obtained with DiceBCELoss in this case.
 
-Both of the encoders were pretrained on ImageNet. However, I do believe there is one more trick that can be fruitful: we can fine-tune encoders on the whole dataset (classification defect/no_defect). This way we can get some better results, but there were no images of class no_defect in the train.csv at all.
+Both of the encoders were pretrained on ImageNet. However, I do believe there is **one more trick** that can be fruitful: we can fine-tune encoders on the whole dataset (classification defect/no_defect). This way we can get some better results, but there were no images of class no_defect in the train.csv at all.
 
 Also, in this situation of imbalanced classes there is point in using only images including True Positive. But, as I said above, there were no other pictures at all in the train.csv.
 
