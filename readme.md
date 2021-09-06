@@ -13,8 +13,10 @@ I have not included EDA here, in general data seems to be clear (having our new 
 
 ## Plan of research
 First, let's identify the main architecture. 
-UNet is obviously better for this problem than Mask R-CNN.
+UNet is a bit better for this problem than Mask R-CNN. It is enough to complete the task, without the need to use more complex instance segmentation like Mask R-CNN.
 I've conducted a research on several Kaggle kernels and papers from sources like arxiv.com.
+
+So:
  - Architecture: UNet
  - Encoder: EfficientNet-B3,B4; ResNet-50
  - Loss function: DiceBCELoss, TverskyLoss (alpha=0.1, beta=0.9)
@@ -31,6 +33,8 @@ The best results have been obtained with DiceBCELoss in this case.
 Both of the encoders were pretrained on ImageNet. However, I do believe there is one more trick that can be fruitful: we can fine-tune encoders on the whole dataset (classification defect/no_defect). This way we can get some better results, but there were no images of class no_defect in the train.csv at all.
 
 Also, in this situation of imbalanced classes there is point in using only images including True Positive. But, as I said above, there were no other pictures at all in the train.csv.
+
+Moreover, we can try some multi-scale training methods to increase image resolution from small to large, but I haven't done that.
 
 I need to add I've been bounded with Cuda memory capacity, so basicaly I could not try bigger encoders for batch size > 8.
 
