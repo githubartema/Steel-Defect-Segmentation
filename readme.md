@@ -44,9 +44,10 @@ I need to add I've been bounded with Cuda memory capacity, so basicaly I could n
 Inferences for validation data:
 
  - EfficientNet-B4
- 
-
-
+ ![alt text]('./pic_1.png')
+ ![alt text]('./pic_2.png')
+ ![alt text]('./pic_3.png')
+ ![alt text]('./pic_4.png')
 
 
 Link to TensorBoard for EfficientNet-B4: [tap here](https://tensorboard.dev/experiment/rTq70zmmRJeXbklyFQs46g/#scalars)
