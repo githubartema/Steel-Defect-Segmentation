@@ -41,7 +41,7 @@ I need to add I've been bounded with Cuda memory capacity, so basicaly I could n
 | EfficientNet-B3  | 0.513  |      0.444        | (256, 768)| 11 |
 | EfficientNet-B4  | 0.597 | 0.36 | (256, 768) |    37     |
 
-Link to TensorBoard for EfficientNet-B4: [tap here](https://tensorboard.dev/experiment/rTq70zmmRJeXbklyFQs46g/#scalars)
+**Link to TensorBoard for EfficientNet-B4:** [tap here](https://tensorboard.dev/experiment/rTq70zmmRJeXbklyFQs46g/#scalars)
 
 Inferences for validation data:
 
@@ -74,6 +74,30 @@ Installation:
 !pip install catalyst
 ```
 # Usage
+
+**The directory tree should be:**
+
+├── Predict_masks.py
+├── Train.py
+├── config.py
+├── data
+│   ├── results
+│   ├── test.csv
+│   ├── test_images
+│   ├── train.csv
+│   ├── train_balanced.csv
+│   └── train_images
+├── images
+│   
+├── readme.md
+├── utils
+│   ├── losses.py
+│   └── utils.py
+└── weights
+    ├── UnetEfficientNetB4_IoU_059.pth
+    └── UnetResNet50_IoU_043.pth
+
+
 ## Evaluation
 
 There is a Predict_masks.py script which can be used to evaluate the model and predict masks for the test dataset. The weights are stored in the ./weights directory.
