@@ -9,6 +9,8 @@ Moreover, weights for trained models are provided, the result are:
 **Important:** balanced (in the meaning of defect classes) dataset includes 1000 images, where each class includes roughly 250 images.
 With the whole dataset the metrics might be better.
 
+I have not included EDA here, in general data seems to be clear (having our new dataset balanced).
+
 ## Plan of research
 First, let's identify the main architecture. 
 UNet is obviously better for this problem than Mask R-CNN.
