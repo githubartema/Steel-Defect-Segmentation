@@ -76,6 +76,7 @@ Installation:
 # Usage
 
 **The directory tree should be:**
+
 <pre>
 ├── Predict_masks.py
 ├── Train.py
@@ -95,8 +96,7 @@ Installation:
 │   └── utils.py
 └── weights
     ├── UnetEfficientNetB4_IoU_059.pth
-    └── UnetResNet50_IoU_043.pth
-<pre>
+    └── UnetResNet50_IoU_043.pth <pre>
 
 ## Evaluation
 
