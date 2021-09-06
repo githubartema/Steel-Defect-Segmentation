@@ -28,7 +28,7 @@ The best results have been obtained with DiceBCELoss in this case.
 
 Both of the encoders were pretrained on ImageNet. However, I do believe there is one more trick that can be fruitful: we can fine-tune encoders on the whole dataset (classification defect/no_defect). This way we can get some better results, but there were no images of class no_defect at all.
 
-Also, in this situation of imbalanced classes there is point in using only images including True Positive. But, as I said above, there were no other pictures at all.
+Also, in this situation of imbalanced classes there is point in using only images including True Positive. But, as I said above, there were no other pictures at all in the train.csv.
 
 I need to add I've been bounded with Cuda memory capacity, so basicaly I could not try bigger encoders for batch size > 8.
 
@@ -40,6 +40,8 @@ I need to add I've been bounded with Cuda memory capacity, so basicaly I could n
 | ResNet-50 | 0.4132 |     | (256, 1600) |            |    |
 | EfficientNet-B3  | 0.513  |      0.444        | (256, 768)| 11 |
 | EfficientNet-B4  | 0.597 | 0.36 | (256, 768) |    37     |
+
+Link to TensorBoard for EfficientNet-B4: [tap here](https://tensorboard.dev/experiment/rTq70zmmRJeXbklyFQs46g/#scalars)
 
 Inferences for validation data:
 
@@ -57,8 +59,6 @@ Inferences for validation data:
  Example 4: 
  ![alt text](/images/pic_4.png)
 
-
-Link to TensorBoard for EfficientNet-B4: [tap here](https://tensorboard.dev/experiment/rTq70zmmRJeXbklyFQs46g/#scalars)
 
 ## Installation
 
