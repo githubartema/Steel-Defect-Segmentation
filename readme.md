@@ -103,9 +103,9 @@ Installation:
 
 ## Evaluation
 
-There is a Predict_masks.py script which can be used to evaluate the model and predict masks for the test dataset. The weights are stored in the ./weights directory.
+There is a Predict_masks.py script which can be used to evaluate the model and predict masks for the test dataset (from test.csv). The weights are stored in the ./weights directory.
 
-It is necessary to point the directory where the test dataset is stored. Predicted masks will be stored in ./evaluation folder.
+Pictures with predicted masks and source images will be stored in data/results folder.
 
 **Important:** masks for ResNet-50 are of (256, 1600)px and masks for EfficientNet-B3,B4 are of (256, 768)px. Free Colab doesn't allow to use more Cuda memory:(
 
