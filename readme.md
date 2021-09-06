@@ -76,17 +76,17 @@ Installation:
 # Usage
 
 **The directory tree should be:**
-
+'''
 ├── Predict_masks.py
 ├── Train.py
 ├── config.py
 ├── data
-│   ├── results
+│   ├── results                #results
 │   ├── test.csv
-│   ├── test_images
+│   ├── test_images            #download test images here
 │   ├── train.csv
 │   ├── train_balanced.csv
-│   └── train_images
+│   └── train_images           #download train images here
 ├── images
 │   
 ├── readme.md
@@ -96,7 +96,7 @@ Installation:
 └── weights
     ├── UnetEfficientNetB4_IoU_059.pth
     └── UnetResNet50_IoU_043.pth
-
+'''
 
 ## Evaluation
 
