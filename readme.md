@@ -4,7 +4,7 @@ Abstract: this repo includes a pipeline using Catalyst for training UNet with di
 Moreover, weights for trained models are provided, the result are:
 - UNet with ResNet-50 - IoU 0.413
 - UNet with EfficientNet-B3 - IoU 0.541
-- UNet with EfficientNet-B3 - IoU 0.592
+- UNet with EfficientNet-B4 - IoU 0.592
 
 **Important:** balanced (in the meaning of defect classes) dataset includes 1000 images, where each class includes roughly 250 images.
 With the whole dataset the metrics might be better.
